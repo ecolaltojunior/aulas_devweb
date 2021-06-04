@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <title>Comentários</title>
+        <!--metadados-->
+        <meta charset="utf-8">
+        <meta name="description" content="Comentários">
+        <meta name="keywords" content="comentarios, html, web">
+      
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="acessibilidade">
+           <ul id="atalhos">
+               <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo [1]</a></li>
+               <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+               <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>         
+               
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="#" title="Contraste Preto">CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="#" title="Sem Contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="#" title="Aumentar a Fonte (Ctrl +)">A+</a></li>
+                <li class="fonte"><a href="#" title="Diminuir a Fonte (Ctrl -)">A-</a></li>
+            </ul>
+        </div>
+        <header id="topo"><!--topo-->
+            <img class="imagem" src="imagem/FATEC_ZONA_LESTE.png" alt="Logo Fatec Zona Leste">
+            <nav>
+               
+                <ul id="menu">
+                    <li><a href="comentario.html">Comentários</a></li>
+                    <li><a href="metadados.html">Metadados</a></li>
+                    <li><a href="#">Listas</a>
+                        <ul>
+                            <li><a href="ul.html">Lista não ordenada</a></li>
+                            <li><a href="ol.html">Lista ordenada</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="layout.html">Elementos de layout</a></li>    
+                </ul> 
+            </nav>
+         <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+        </header>
+        <main id="conteudo"><!--conteúdo-->
+            <section>
+            <h1 id="titulo">Comentários</h1>
+                 <audio controls>
+                <source src="01%20The%20Miracle%20(Of%20Joey%20Ramone).mp3" type="audio/mp3">
+                 Não foi possível reproduzir o áudio.
+            </audio>
+            <p class="paragrafo">Comentários em HTML não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte HTML.</p>
+            <p class="paragrafo">Com os comentários, você pode colocar notificações e lembretes no seu código HTML.</p>
+            <img class="imagem" src="imagem/comentarios.png" alt="Exemplo de comentários"><br>
+            
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Não foi possível reproduzir o vídeo.
+                
+            </video>
+           
+            
+        </section>
+        </main>
+        <footer id="rodape"><p>Todos os direitos reservados &copy; 2021</p></footer><!--rodapé-->
+    </body>
+
+</html>

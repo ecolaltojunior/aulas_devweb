@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <title>Formulários</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="formularios,html,web">
+        <meta name="description" content="Formulários HTML">
+        <link rel="stylesheet" href="form.css">
+        <script src="form2.js"></script>
+    </head>
+    <body>
+        
+        <header id="topo"><h1>Formulários HTML</h1></header>
+        <main id="conteudo">
+            <form name="cadastro" id="cadastro" method="post" onsubmit="return controle();">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="nome" class="required">Nome</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo" required><br>
+                    <label for="data" class="required">Data de nascimento</label><br>
+                    <input type="date" name="data" id="data" required><br>
+                    <label for="rg" class="required">RG</label><br>
+                    <input type="text" name="rg" id="rg" placeholder="99.999.999-X" required><br>
+                    <label for="cpf" class="required">CPF</label><br>
+                    <input type="number" name="cpf" id="cpf" placeholder="Somente números" required><br>
+                    <label for="telefone">Telefone residencial</label><br>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(99)9999-9999"><br>
+                    <label for="celular">Celular</label><br>
+                    <input type="tel" name="celular" id="celular" placeholder="(99)99999-9999"><br>
+                    <label for="estado_civil" class="required">Estado Civil</label><br>
+                    <select name="estado_civil" id="estado_civil" required>
+                        <option value="" selected disabled>Selecione um item da lista</option>
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="viuvo">Viúvo(a)</option>
+                        <option value="divorciado">Divorciado(a)</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label for="cep" class="required">CEP</label><br>
+                    <input type="text" name="cep" id="cep" placeholder="99999-999" required><br>
+                    <label for="logradouro">Logradouro</label><br>
+                    <input type="text" name="logradouro" id="logradouro" placeholder="Rua/Avenida/Travessa"><br>
+                    <label for="numero" class="required">Número</label><br>
+                    <input type="number" name="numero" id="numero" placeholder="Número da residência" required><br>
+                    <label for="complemento">Complemento</label><br>
+                    <input type="text" name="complemento" id="complemento" placeholder="Bloco, Apto, CasaXX..."><br>
+                    <label for="bairro">Bairro</label><br>
+                    <input type="text" name="bairro" id="bairro"><br>
+                    <label for="cidade">Cidade</label><br>
+                    <input type="text" name="cidade" id="cidade"><br>
+                    <label for="estado">Estado</label><br>
+                    <input type="text" name="estado" id="estado"><br>  
+
+                </fieldset>
+                <fieldset>
+                    <legend>Dados de login</legend>
+                    <label for="email" class="required">E-Mail</label><br>
+                    <input type="email" name="email" id="email" placeholder="nome@site.com.br" required><br>
+                    <label for="senha" class="required">Senha</label><br>
+                    <input type="password" name="senha" id="senha" minlenght="8" maxlength="12" placeholder="Mínimo 6 e Máximo 12 caracteres" required><br>
+                    <label for="confirma" class="required">Confirme a senha</label><br>
+                     <input type="password" name="confirma" id="confirma" minlenght="8" maxlength="12" placeholder="Confirme a senha" required><br>
+                            
+                </fieldset>
+                <input type="radio" name="concordo" id="concordo" required> <label for="concordo" class="required">Concordo com os termos de uso.</label><br>
+            <input type="submit" name="cadastrar" id="cadastrar" value="Cadastrar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
+            
+                
+            </form>
+        
+        
+        
+        </main>
+    
+    
+    </body>
+
+
+</html>
