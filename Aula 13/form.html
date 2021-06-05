@@ -7,6 +7,18 @@
         <meta name="description" content="Formulários HTML">
         <link rel="stylesheet" href="form.css">
         <script src="form2.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(document).ready(function(){
+                $('#rg').mask('99.999.999-A');
+                $('#telefone').mask('(99) 9999-9999');
+                $('#celular').mask('(99) 99999-9999');
+                $('#cep').mask('99999-999');
+
+            });
+        </script>
+        <script src="js/cep.js"></script>
     </head>
     <body>
         

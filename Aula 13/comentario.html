@@ -9,6 +9,9 @@
       
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="js/fonte.js"></script>
+        <script src="js/contraste.js"></script>
     </head>
     <body>
         <div id="acessibilidade">
@@ -18,10 +21,10 @@
                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>         
                
                 <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
-                <li class="contraste"><a href="#" title="Contraste Preto">CONTRASTE PRETO</a></li>
-                <li class="contraste"><a href="#" title="Sem Contraste">SEM CONTRASTE</a></li>
-                <li class="fonte"><a href="#" title="Aumentar a Fonte (Ctrl +)">A+</a></li>
-                <li class="fonte"><a href="#" title="Diminuir a Fonte (Ctrl -)">A-</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste" title="Contraste Preto">CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="semcontraste" title="Sem Contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumenta" title="Aumentar a Fonte (Ctrl +)">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminui" title="Diminuir a Fonte (Ctrl -)">A-</a></li>
             </ul>
         </div>
         <header id="topo"><!--topo-->
