@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><!--idioma principal da página-->
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula comentários, metadados, listas e layout">
+    <meta name="keywords" content="HTML, Comentários, Listas, Layout, Elementos Semânticos">
+    <meta name="author" content="Edson Junior">
+    <title>Aula 5</title>
+    <link rel="stylesheet" href="css/arquivo.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/fonte.js"></script>
+    <script src="js/contraste.js"></script>
+</head>
+<body>
+   <header id="topo"><!--topo da página-->
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>
+
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+            </ul>
+        </div>
+       <img id="logo" src="imagem/FATEC_ZONA_LESTE.png" alt="imagem com a palavra Fatec em cinza e a expressão Zona Leste em vermelho">
+       <nav>
+        <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a>
+                    <ul>
+                        <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                        <li><a href="lista_nao_ordenada.html">Lista não Ordenada</a></li>
+                    </ul>
+                </li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+       </nav>
+       <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+   </header> 
+   <main id="conteudo"><!--conteúdo principal da página-->
+       <h1>ACESSIBILIDADE</h1>
+       <ul class="breadcrumb">
+        <li><a href="index.html">Início</a></li>
+        <li>Acessibilidade</li>
+    </ul>
+       <section>
+         <h2>Recursos de acessibilidade do site</h2>        
+        	
+		<p>Este site foi desenvolvido para que pessoas com deficiência visual, baixa visão, daltonismo, deficiência auditiva e mobilidade reduzida possam navegar por meio de recursos como alto contraste, aumento de fonte, teclas de atalho, tradução para a Língua Brasileira de Sinais e navegação por teclado.</p>
+
+		<p>Para aumentar a fonte, é só clicar no símbolo de A+ em nossa barra de acessibilidade. Caso queira voltar ao tamanho de fonte original, é só clicar em A-.</p>
+
+		<p>Se for necessário, você também pode usar o zoom nativo do seu navegador, pressionando as teclas “Ctrl” e “+” para aumentar todo o site e “Ctrl” e “-“ para diminuir. Para voltar ao padrão, pressione “Ctrl” e “0”.</p>
+
+		<p>Este site tem melhor acessibilidade quando acessado nas versões mais atualizadas do seu navegador web. Utilize sempre a versão mais recente de seu software.</p>
+
+		<p>Teclas de atalho por navegadores</p>
+		<p>Internet Explorer e Google Chrome:</p>
+
+		<p>“Alt” + “1” - ir para o conteúdo</p>
+		<p>“Alt” + “2” - ir para o menu</p>
+		<p>“Alt” + “3” - ir para o rodapé</p>
+		<p>Firefox:</p>
+
+		<p>“Alt” + “Shift” + “número”</p>
+		<p>Opera:</p>
+
+		<p>“Shift” + “Escape” + “número”</p>
+		<p>Safari e OmniWeb:</p>
+
+		<p>“Ctrl” + “número”</p>
+		<p>Navegação por tabulação</p>
+		<p>Use a tecla Tab para navegar por elementos que recebem ação do usuário no site, tais como links, botões, campos de formulário e outros na ordem em que eles são apresentados na página, e Shift + Tab para retornar. Use as setas direcionais para acessar as informações textuais.</p>
+
+		<p>Sugestões de programas disponíveis para pessoas com deficiência</p>
+		<p>- Nitrous Voice Flux: controla o computador por voz. Gratuito;</p>
+		<p>- NVDA: software livre para ler tela – vários idiomas (Windows);</p>
+		<p>- YeoSoft Text: leitor de tela em inglês e português;</p>
+		<p>- Jaws for Windows: leitor de tela – vários idiomas;</p>
+		<p>- Virtual Vision: leitor de telas em português do Brasil;</p>
+		<p>- DOSVOX: sistema para deficientes visuais (Windows ou Linux).</p>
+		<p>- Talckback: leitor de tela disponível em smartphones Android.</p>
+	<p>Observação: leia no manual do leitor de telas sobre a melhor forma de navegação em páginas web.</p><br>
+		
+		<p>LIBRAS - Língua Brasileira de Sinais</p>
+		<p>Este site é acessível em LIBRAS através do <a href="http://www.vlibras.gov.br/" target="_blank">VLibras</a>.</p>
+		<p>-Do lado direito de cada página do site existe o ícone de um Widget informando que o site é acessível em LIBRAS.</p>
+		<p>-Para traduzir, basta clicar sobre o ícone e selecionar o texto que deseja traduzir.</p>
+            
+       </section>
+    </main>
+  <footer id="rodape"><p>Desenvolvido por Junior &copy; 2021.</p>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="CSS válido!" />
+        </a>
+    </p>
+
+</footer><!--rodapé da página-->
+</body>
+</html>
