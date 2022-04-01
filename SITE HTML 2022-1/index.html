@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR"><!--idioma principal da página-->
 <head>
-    <!--METADADOS-->
+    <!--Metadados-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Instruções sobre metadados, comentários, listas e layout em HTML">
-    <meta name="keywords" content="HTML, Comentários, Metadados, Lista não ordenada, Lista Ordenada, Layout">
+    <meta name="description" content="Aula comentários, metadados, listas e layout">
+    <meta name="keywords" content="HTML, Comentários, Listas, Layout, Elementos Semânticos">
     <meta name="author" content="Edson Junior">
-
-    <title>Aulas Desenvolvimento Web 1</title><!--título do site-->
+    <title>Aulas Desenvolvimento Web 1</title>
+    <link rel="stylesheet" href="css/arquivo.css">
 </head>
 <body>
-    <header><!--topo da página-->
-        <a href="index.html" title="Ir para a página inicial"><img src="imagem/FATEC_ZONA_LESTE.png" alt="Logo Fatec Zona Leste nas cores cinza e vermelho"></a>
-        <nav> <!--menu de navegação-->
-            <ul>
+   <header id="topo"><!--topo da página-->
+       <img id="logo" src="imagem/FATEC_ZONA_LESTE.png" alt="imagem com a palavra Fatec em cinza e a expressão Zona Leste em vermelho">
+       <nav>
+            <ul id="menu">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="comentarios.html">Comentários</a></li>
                 <li><a href="metadados.html">Metadados</a></li>
-                <li><a href="#">Listas</a>
+                <li><a href="javascript:void(0);">Listas</a>
                     <ul>
                         <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
                         <li><a href="lista_nao_ordenada.html">Lista não Ordenada</a></li>
@@ -27,24 +27,21 @@
                 </li>
                 <li><a href="layout.html">Layout</a></li>
             </ul>
-        </nav>
-    </header>
-    <main><!--conteúdo da página-->
-        <h1>AULA DESENVOLVIMENTO WEB 1</h1>
-        <section>
-            <h2>Assuntos principais</h2>
-            <ol>
-                <li>Comentários</li>
-                <li>Metadados</li>
-                <li>Listas</li>
-                <li>Layout</li>
+       </nav>
+   </header> 
+   <main id="conteudo"><!--conteúdo da página-->
+    <h1>AULA DESENVOLVIMENTO WEB 1</h1>
+    <section>
+        <h2>Assuntos principais</h2>
+        <ol>
+            <li>Comentários</li>
+            <li>Metadados</li>
+            <li>Listas</li>
+            <li>Layout</li>
 
-            </ol>
-        </section>
-    </main>
-    <footer>
-        <p>Desenvolvido por Edson Junior</p>
-        <p>Todos os direitos reservados &copy; 2022.</p>
-    </footer>
+        </ol>
+    </section>
+</main>
+  <footer id="rodape"><p>Desenvolvido por Junior &copy; 2022.</p></footer><!--rodapé da página-->
 </body>
 </html>
