@@ -11,17 +11,54 @@ body{
     width: 20%;
     height: auto;
 }
+/*início da aplicação de estilo no menu*/
 nav{
     width: 100%;
     height: auto;
     background-color: #b00000;
+    float: left;
 }
 #menu{
-    color: #fff;
+   list-style: none;
+   border: 1px solid #fff;
+   padding-left: 4%;
 }
-#menu a{
-    color: #fff;
+#menu li{
+    position: relative;
+    float: left;
+    border-right: 1px solid #fff;
 }
+#menu li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+#menu li a:hover{
+    background-color: #fff;
+    color: #b00000;
+    transition: 0.7s;
+}
+
+/*início submenu*/
+#menu li ul{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #b00000;
+    display: none;
+}
+#menu li:hover ul{ /*exibir o submenu*/
+    display: block;
+}
+#menu li ul li{
+    border: 1px solid #fff;
+    display: block;
+    width: 170px;
+}
+
+/*fim menu*/
 
 #conteudo{
     width: 100%;
