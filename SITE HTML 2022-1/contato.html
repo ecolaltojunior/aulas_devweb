@@ -39,25 +39,25 @@
         <fieldset>
 
             <legend>Dados pessoais</legend>
-            <label for="nome">Nome</label><br>
+            <label for="nome" class="required">Nome</label><br>
             <input type="text" name="nome" id="nome" placeholder="Nome Completo" required><br>
-            <label for="data">Data de Nascimento</label><br>
+            <label for="data" class="required">Data de Nascimento</label><br>
             <input type="date" name="data" id="data" required><br>
-            <label for="cpf">CPF</label><br>
+            <label for="cpf" class="required">CPF</label><br>
             <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required><br>
             <label for="telefone">Telefone</label><br>
             <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999"><br>
-            <label for="email">E-Mail</label><br>
+            <label for="email" class="required">E-Mail</label><br>
             <input type="email" name="email" id="email" placeholder="nome@site.com.br" required><br>
 
         </fieldset>
         <fieldset>
             <legend>Dados de endereço</legend>
-            <label for="cep">CEP</label><br>
+            <label for="cep" class="required">CEP</label><br>
             <input type="text" name="cep" id="cep" placeholder="99999-999" required><br>
             <label for="rua">Rua/Avenida</label><br>
             <input type="text" name="rua" id="rua"><br>
-            <label for="numero">Número</label><br>
+            <label for="numero" class="required">Número</label><br>
             <input type="number" name="numero" id="numero" required><br>
             <label for="complemento">Complemento</label><br>
             <input type="text" name="complemento" id="complemento" placeholder="Apto, Bloco, Casa..."><br>
@@ -70,7 +70,7 @@
         </fieldset>
         <fieldset>
             <legend>Dados da Mensagem</legend>
-            <label for="assunto">Assunto</label><br>
+            <label for="assunto" class="required">Assunto</label><br>
             <select name="assunto" id="assunto" required>
                 <option value="" selected disabled>Selecione uma opção</option>
                 <option value="elogio">Elogio</option>
@@ -78,8 +78,8 @@
                 <option value="sugestão">Sugestão</option>
                 <option value="outro">Outro</option>
             </select><br>
-            <label for="mensagem">Mensagem</label><br>
-            <textarea name="mensagem" id="mensagem" required placeholder="Digite aqui sua mensagem!"></textarea>
+            <label for="mensagem" class="required">Mensagem</label><br>
+            <textarea rows="30" name="mensagem" id="mensagem" required placeholder="Digite aqui sua mensagem!"></textarea>
         </fieldset>
         <input type="submit" name="enviar" id="enviar" value="Enviar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
     </form>

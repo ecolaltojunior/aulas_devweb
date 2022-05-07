@@ -81,7 +81,50 @@ section{
     width: 40%;
     height: auto;
 }
+form{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+label, legend{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 1em;
+    
+}
 
+input, select{
+    width: 70%;
+    height: auto;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+fieldset{
+    border: 1px solid #b00000;
+    border-radius: 15px;
+    padding: 2%;
+}
+textarea{
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 15px;
+}
+input[type=submit]{
+    width: 10%;
+    height: auto;
+    margin-left: 40%;
+}
+input[type=reset]{
+    width: 10%;
+    height: auto;
+       
+}
+.required:after{
+    content: " *";
+    color: red;
+
+}
 #rodape{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
