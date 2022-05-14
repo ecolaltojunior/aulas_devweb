@@ -2,6 +2,28 @@
 body{
     font-size: 14px;
 }
+#acessibilidade{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+#atalhos{
+    list-style: none;
+    padding-left: 2%;
+}
+#atalhos li{
+    display: inline;
+}
+#pgacess{
+    padding-left: 40%;
+}
+.contraste, .fonte{
+    padding-left: 2%;
+}
+
 #topo{
     width: 100%;
     height: auto;
