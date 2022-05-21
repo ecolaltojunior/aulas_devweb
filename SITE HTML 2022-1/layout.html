@@ -28,6 +28,8 @@
         </div>
         <img id="logo" src="imagem/FATEC_ZONA_LESTE.png" alt="imagem com a palavra Fatec em cinza e a expressão Zona Leste em vermelho">
         <nav>
+            <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu"><!--menu responsivo--> 
              <ul id="menu">
                  <li><a href="index.html">Início</a></li>
                  <li><a href="comentarios.html">Comentários</a></li>
@@ -42,6 +44,16 @@
                  <li><a href="contato.html">Fale Conosco</a></li>
              </ul>
         </nav>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
         <ul class="breadcrumb">
             <li><a href="index.html">Início</a></li>
             <li>Layout</li>
