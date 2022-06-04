@@ -16,7 +16,7 @@ $(document).ready(function(){
         location.reload();				
     });
     
-    $("#sem_contraste").click(function(){
+    $("#semcontraste").click(function(){
         setCookie("default")
         location.reload();									
     });
