@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 14px;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+}
+
+#topo{
+    width: 100%;
+    background-color: #ddd;
+    justify-content: center;
+    height: auto;
+}
+
+#topo a{
+   text-align: center;
+}
+
+.imagem{
+    width: 40%;
+    height: auto;
+}
+
+nav{
+    width: 100%;
+    background-color:#dc143c;
+    height: auto;
+    justify-content: center;
+    
+}
+
+.menu{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    position: relative;
+    padding: 10%;
+}
+
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu li a:hover{
+    color: #000;
+    transition: 0.5s;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    list-style: none;
+    top: 70px;
+    left: 0;
+    background-color: #dc143c;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu li ul li{
+    display: block;
+    width: 170px;
+}
+
+#conteudo{
+    min-height: 700px;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+
+}
+
+#conteudo h1{
+    text-align: center;
+    padding-top: 2%;
+}
+
+#conteudo p, ol, h2, img{
+    padding: 2%  5%;
+
+
+}
+
+#rodape{
+    justify-content: center;
+    text-align: center;
+    background-color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1em;
+    align-items: center;
+    height: 80px;
+
+}
+
+
+
+
+
