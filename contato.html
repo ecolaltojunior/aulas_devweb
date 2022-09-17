@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--METADADOS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, metadados, comentários, layout, listas">
+    <!--FIM METADADOS-->
+    <title>Aulas Desenvolvimento Web 1</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="flex-container" id="topo"><!--Topo-->
+        <a href="index.html" title="Voltar para o início"><img class="imagem" src="imagem/FATEC_ZONA_LESTE.png" alt="logo Fatec Zona Leste nas cores cinza e vermelho"></a>
+    </header>
+    <nav class="flex-container"><!--Navegação-->
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="comentarios.html">Comentários</a></li>
+            <li><a href="metadados.html">Metadados</a></li>
+            <li><a href="javascript:void(0);">Listas</a>
+                <ul>
+                    <li><a href="ol.html">Lista Ordenada</a></li>
+                    <li><a href="ul.html">Lista Não Ordenada</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="layout.html">Layout</a></li>
+            
+            
+        </ul>
+    </nav>
+    <main class="flex-container" id="conteudo"><!--Conteúdo-->
+        <h1>FALE CONOSCO</h1>
+       <form action="" method="post" name="contato" id="contato">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo" required><br>
+            <label for="cpf">CPF</label><br>
+            <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required><br>
+            <label for="data">Data de nascimento</label><br>
+            <input type="date" name="data" id="data" required><br>
+            <label for="telefone">Telefone</label><br>
+            <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999"><br>
+            <label for="email">E-Mail</label><br>
+            <input type="email" name="email" id="email" placeholder="nome@site.com.br" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="cep">CEP</label><br>
+            <input type="text" name="cep" id="cep" placeholder="99999-999" required><br>
+            <label for="rua">Rua</label><br>
+            <input type="text" name="rua" id="rua"><br>
+            <label for="numero">Número</label><br>
+            <input type="number" name="numero" id="numero" required><br>
+            <label for="complemento">Complemento</label><br>
+            <input type="text" name="complemento" id="complemento" placeholder="Apartamento, Bloco, Casa, etc."><br>
+            <label for="bairro">Bairro</label><br>
+            <input type="text" name="bairro" id="bairro"><br>
+            <label for="cidade">Cidade</label><br>
+            <input type="text" name="cidade" id="cidade"><br>
+            <label for="estado">Estado</label><br>
+            <input type="text" name="estado" id="estado"><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Dados da mensagem</legend>
+            <label for="curso">Curso</label><br>
+            <select name="curso" id="curso" required>
+                <option value="" selected disabled>Selecione um curso</option>
+                <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                <option value="comex">Comércio Exterior</option>
+                <option value="dpp">Desenvolvimento de Produtos Plásticos</option>
+                <option value="dsm">Desenvolvimento de Software Multiplataforma</option>
+                <option value="ge">Gestão Empresarial</option>
+                <option value="rh">Gestão de Recursos Humanos</option>
+                <option value="log">Logística</option>
+                <option value="pol">Polímeros</option>
+            </select><br>
+            <label for="assunto">Assunto</label><br>
+            <select name="assunto" id="assunto" required>
+                <option value="elogio">Elogio</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="outro">Outro</option>
+            </select><br>
+            <label for="mensagem">Mensagem</label><br>
+            <textarea name="mensagem" id="mensagem" cols="40" rows="10"></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+       </form>
+       
+    </main>
+    <footer class="flex-container" id="rodape"><!--rodapé-->
+        <p>Desenvolvido por Junior<br>
+            Todos os direitos reservados &copy; 2022
+        </p>
+    </footer>
+</body>
+</html>
