@@ -44,7 +44,7 @@ nav{
 
 .menu li{
     position: relative;
-    padding: 10%;
+    padding: 20px 30px;
 }
 
 .menu li a{
@@ -63,7 +63,7 @@ nav{
     display: none;
     position: absolute;
     list-style: none;
-    top: 70px;
+    top: 40px;
     left: 0;
     background-color: #dc143c;
 }
