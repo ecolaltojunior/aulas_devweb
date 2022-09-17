@@ -27,7 +27,7 @@ body{
     width: 40%;
     height: auto;
 }
-
+/*Navegação*/
 nav{
     width: 100%;
     background-color:#dc143c;
@@ -76,7 +76,7 @@ nav{
     display: block;
     width: 170px;
 }
-
+/* conteúdo */
 #conteudo{
     min-height: 700px;
     flex-direction: column;
@@ -93,6 +93,37 @@ nav{
 #conteudo p, ol, h2, img{
     padding: 2%  5%;
 
+
+}
+/* Formulário */
+form{
+    align-self: center;
+    padding: 2%;   
+}
+label, legend{
+    font-size: 0.7em;
+}
+input, select, textarea{
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    
+}
+fieldset{
+    width: 100%;
+    border: none;
+    padding: 40px;
+    margin: auto;
+    
+}
+button{
+    width: 45%;
+    padding: 10px;
+        
+}
+.required::after{
+    content: " *";
+    color: red;
 
 }
 
