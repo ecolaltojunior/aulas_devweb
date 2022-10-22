@@ -97,6 +97,12 @@ nav{
     display: block;
     width: 170px;
 }
+/*ocultar menu hamburguer*/
+
+label[for="bt_menu"], #bt_menu{
+    display: none;
+}
+
 /* conteúdo */
 #conteudo{
     min-height: 700px;
@@ -164,6 +170,59 @@ video{
     width: 60%;
     height: auto;
     align-self: center;
+}
+
+/* media queries barra de acessibilidade */
+
+@media screen and (max-width: 1680px){
+    .links_access{
+
+        margin-left: 45%;
+    }
+}
+@media screen and (max-width: 1345px){
+    .links_access{
+
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width: 1230px){
+    .links_access{
+
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .links_access{
+
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 850px){
+
+    .atalhos{
+        display: none;
+    }
+    .links_access{
+
+        margin-left: 5%;
+    }
+}
+
+/* media queries menu responsivo */
+
+@media screen and (max-width: 740px){
+
+    nav{
+        justify-content: left;
+    }
+    .menu{
+        display: none;
+    }
+
+    label[for="bt_menu"]{
+        display: block;
+    }
 }
 
 
