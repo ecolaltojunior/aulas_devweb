@@ -105,23 +105,21 @@ label[for="bt_menu"], #bt_menu{
 
 /* conteúdo */
 #conteudo{
-    min-height: 700px;
+    min-height: 800px;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
 
 }
 
-#conteudo h1{
+h1{
     text-align: center;
-    padding-top: 2%;
+     
+}
+section{
+    padding: 2% 10%;
 }
 
-#conteudo p, ol, h2, img{
-    padding: 2%  5%;
-
-
-}
 /* Formulário */
 form{
     align-self: center;
@@ -204,8 +202,7 @@ video{
         display: none;
     }
     .links_access{
-
-        margin-left: 5%;
+        margin: auto;
     }
 }
 
@@ -222,6 +219,45 @@ video{
 
     label[for="bt_menu"]{
         display: block;
+        margin: 2%;
+    }
+
+    #bt_menu:checked ~ .menu{
+        display: block;
+       
+    }
+
+    .menu li{
+        position: relative;
+        padding: 10% 1px;
+        
+    }
+
+    #menu li ul{
+            
+        position: static;
+      
+        
+    }
+    #menu li ul li{
+            
+        position: absolute;
+        flex-direction: column;
+        
+        
+              
+    }
+    
+    .imagem{
+        width: 60%;
+        height: auto;
+    }
+    
+  
+    video{
+        width: 100%;
+        height: auto;
+        align-self: center;
     }
 }
 
