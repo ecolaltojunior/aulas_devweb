@@ -117,7 +117,7 @@ h1{
      
 }
 section{
-    padding: 2% 10%;
+    padding: 2% 10%; /*acrescentado*/
 }
 
 /* Formulário */
@@ -131,18 +131,18 @@ label, legend{
 input, select, textarea{
     padding: 10px;
     border-radius: 15px;
-    width: 80%;
+    width: 80%; /*corrigido*/
     
 }
 fieldset{
-    width: 70%;
+    width: 70%; /*corrigido*/
     border: none;
-    /*padding: 40px;*/
+    /*padding: 40px;*/ /*corrigido*/
     margin: auto;
     
 }
 button{
-    width: 35%;
+    width: 35%; /*corrigido*/
     padding: 10px;
         
 }
@@ -224,17 +224,27 @@ video{
 
     #bt_menu:checked ~ .menu{
         display: block;
+        width: 100%; /*corrigido*/
+
+       
        
     }
 
     .menu li{
-        padding: 10% 1px;
+        padding: 5% 1px; /*corrigido*/
+        
         
     }
+   
     .menu li ul{
-        position:sticky;
+        position:static; /*acrescentado*/
+        
     }
-    
+    .menu li ul li{
+        position: relative; /*acrescentado*/
+        display: block; /*acrescentado*/
+
+    }
      
     .imagem{
         width: 60%;
