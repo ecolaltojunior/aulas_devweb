@@ -95,7 +95,7 @@ nav{
 
 .menu li ul li{
     display: block;
-    width: 170px;
+    width: 140px;
 }
 /*ocultar menu hamburguer*/
 
@@ -131,18 +131,18 @@ label, legend{
 input, select, textarea{
     padding: 10px;
     border-radius: 15px;
-    width: 100%;
+    width: 80%;
     
 }
 fieldset{
-    width: 100%;
+    width: 70%;
     border: none;
-    padding: 40px;
+    /*padding: 40px;*/
     margin: auto;
     
 }
 button{
-    width: 45%;
+    width: 35%;
     padding: 10px;
         
 }
@@ -228,26 +228,14 @@ video{
     }
 
     .menu li{
-        position: relative;
         padding: 10% 1px;
         
     }
-
-    #menu li ul{
-            
-        position: static;
-      
-        
-    }
-    #menu li ul li{
-            
-        position: absolute;
-        flex-direction: column;
-        
-        
-              
+    .menu li ul{
+        position:sticky;
     }
     
+     
     .imagem{
         width: 60%;
         height: auto;
