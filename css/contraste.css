@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 14px;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+}
+
+.acessibilidade{
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.atalhos, .links_access{
+    list-style: none;
+    display: inline-flex;
+    padding: 5px;
+}
+.atalhos li, .links_access li{
+    
+    padding-left: 10px;
+}
+.atalhos li a, .links_access li a{
+    
+    color: yellow;
+}
+
+.links_access{
+
+    margin-left: 60%;
+}
+
+#topo{
+    width: 100%;
+    background-color: #000;
+    justify-content: center;
+    height: auto;
+}
+
+#topo a{
+   text-align: center;
+}
+
+.imagem{
+    width: 40%;
+    height: auto;
+    filter: invert();
+}
+/*Navegação*/
+nav{
+    width: 100%;
+    background-color:#000;
+    height: auto;
+    justify-content: center;
+    
+}
+
+.menu{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    position: relative;
+    padding: 20px 30px;
+}
+
+.menu li a{
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu li a:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    list-style: none;
+    top: 40px;
+    left: 0;
+    background-color: #000;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu li ul li{
+    display: block;
+    width: 140px;
+}
+/*ocultar menu hamburguer*/
+
+label[for="bt_menu"], #bt_menu{
+    display: none;
+}
+
+/* conteúdo */
+#conteudo{
+    min-height: 800px;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    background-color: #000;
+    color: #fff;
+
+}
+.breadcrumb{
+    padding-left: 2%;
+    list-style: none;
+}
+.breadcrumb li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #fff;
+}
+.breadcrumb li a{
+    color: yellow;
+}
+.breadcrumb li a:hover{
+    color: #fff;
+}
+.breadcrumb li+li::before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #fff;
+}
+h1{
+    text-align: center;
+     
+}
+section{
+    padding: 2% 10%; /*acrescentado*/
+}
+
+/* Formulário */
+form{
+    align-self: center;
+    padding: 2%;   
+}
+label, legend{
+    font-size: 0.7em;
+    color: #fff;
+}
+input, select, textarea{
+    padding: 10px;
+    border-radius: 15px;
+    width: 80%; /*corrigido*/
+    
+}
+fieldset{
+    width: 70%; /*corrigido*/
+    border: none;
+    /*padding: 40px;*/ /*corrigido*/
+    margin: auto;
+    
+}
+button{
+    width: 35%; /*corrigido*/
+    padding: 10px;
+        
+}
+.required::after{
+    content: " *";
+    color: yellow;
+
+}
+
+#rodape{
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1em;
+    align-items: center;
+    height: 80px;
+
+}
+
+video{
+    width: 60%;
+    height: auto;
+    align-self: center;
+}
+
+/* media queries barra de acessibilidade */
+
+@media screen and (max-width: 1680px){
+    .links_access{
+
+        margin-left: 45%;
+    }
+}
+@media screen and (max-width: 1345px){
+    .links_access{
+
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width: 1230px){
+    .links_access{
+
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .links_access{
+
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 850px){
+
+    .atalhos{
+        display: none;
+    }
+    .links_access{
+        margin: auto;
+    }
+}
+
+/* media queries menu responsivo */
+
+@media screen and (max-width: 740px){
+
+    nav{
+        justify-content: left;
+    }
+    .menu{
+        display: none;
+    }
+
+    label[for="bt_menu"]{
+        display: block;
+        margin: 2%;
+    }
+
+    #bt_menu:checked ~ .menu{
+        display: block;
+        width: 100%; /*corrigido*/
+
+       
+       
+    }
+
+    .menu li{
+        padding: 5% 1px; /*corrigido*/
+        
+        
+    }
+   
+    .menu li ul{
+        position:static; /*acrescentado*/
+        
+    }
+    .menu li ul li{
+        position: relative; /*acrescentado*/
+        display: block; /*acrescentado*/
+
+    }
+     
+    .imagem{
+        width: 60%;
+        height: auto;
+    }
+    
+  
+    video{
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+}
+
+
+
