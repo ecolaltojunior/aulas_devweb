@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+}
+
+.flexcontainer{
+    display: flex;
+    width: 100%;
+}
+
+#topo{
+    background-color: #ddd;
+    justify-content: center;
+    height: auto;
+}
+#logo{
+    width: 40%;
+    height: auto;
+}
+nav{
+    height: auto;
+    justify-content: center;
+}
+
+/* menu */
+
+#conteudo{
+    min-height: 600px;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+
+h1{
+    text-align: center;
+}
+
+#rodape{
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    color: #fff;
+    font-size: 0.9em;
+    height: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
