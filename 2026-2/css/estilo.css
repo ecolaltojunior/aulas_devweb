@@ -25,9 +25,55 @@ body{
 nav{
     height: auto;
     justify-content: center;
+    background-color: #6f0319;
 }
 
-/* menu */
+#menu{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#menu li{
+    position: relative;
+    padding: 20px 30px;
+}
+
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#menu li a:hover{
+    color: #000;
+    transition: 0.5s;
+}
+
+/*configurando submenu*/
+
+#menu li ul{
+    display: none;
+    position: absolute;
+    list-style: none;
+    top: 40px;
+    left: 0;
+    background-color: #b40c2e;
+}
+
+#menu li:hover ul{
+    display: block;
+}
+
+#menu li ul li{
+    display: block;
+    width: 150px;
+    font-size: 0.7em;
+}
+
+/*fim menu*/
 
 #conteudo{
     min-height: 600px;
@@ -38,6 +84,10 @@ nav{
 
 h1{
     text-align: center;
+}
+
+section{
+    padding: 2% 10%;
 }
 
 #rodape{
