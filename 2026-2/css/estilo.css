@@ -99,7 +99,7 @@ input, label{
     margin-bottom: 10px;
 }
 
-label{
+label, legend{
     font-size: 0.7em;
 }
 
