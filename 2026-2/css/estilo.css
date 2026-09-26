@@ -122,7 +122,11 @@ button{
     content: " *";
     color: red;
 }
-
+video{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
 #rodape{
     justify-content: center;
     align-items: center;
