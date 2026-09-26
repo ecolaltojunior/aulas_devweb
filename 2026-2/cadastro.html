@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aulas de desenvolvimento web com html, css e Javascript">
+    <meta name="keywords" content="html, css, javascript, web">
+    <meta name="author" content="Edson Junior">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Aulas Desenvolvimento Web I</title>
+</head>
+<body>
+    <header class="flexcontainer" id="topo">
+        <img id="logo" src="imagem/FATEC_ZONA_LESTE.png" alt="logo fatec zona leste">
+    </header>
+    <nav class="flexcontainer">
+        <ul id="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="comentarios.html">Comentários</a></li>
+            <li><a href="metadados.html">Metadados</a></li>
+            <li><a href="">Listas</a>
+                <ul>
+                    <li><a href="ul.html">Lista não ordenada</a></li>
+                    <li><a href="ol.html">Lista ordenada</a></li>
+                </ul>
+            </li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+    <main class="flexcontainer" id="conteudo">
+        <h1>Desenvolvimento Web I</h1>
+        <section>
+            <h2>Cadastro</h2>
+            <form method="post">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label class="required" for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                    <label class="required" for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required>
+                    <label class="required" for="data">Data de Nascimento</label>
+                    <input type="date" name="data" id="data" required>
+                    <label class="required" for="celular">Celular</label>
+                    <input type="tel" name="celular" id="celular" placeholder="(99) 99999-9999" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label class="required" for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" placeholder="99999-999" required>
+                    <label for="rua">Rua</label>
+                    <input type="text" name="rua" id="rua" disabled>
+                    <label class="required" for="numero">Número</label>
+                    <input type="number" name="numero" id="numero" required>
+                    <label for="complemento">Complemento</label>
+                    <input type="text" name="complemento" id="complemento" placeholder="Bloco, apartamento...">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro" disabled>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" disabled>
+                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" id="estado" disabled>
+                </fieldset>
+                <fieldset>
+                    <legend>Login</legend>
+                    <label class="required" for="email">E-Mail</label>
+                    <input type="email" name="email" id="email" placeholder="nome@site.com.br" required>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="A senha deve conter no mínimo 8 caracteres, uma letra maiúscula, número e caractere especial" required>
+                    <label class="required" for="confirma">Confirme a Senha</label>
+                    <input type="password" name="confirma" id="confirma" required>
+                </fieldset>
+                <button type="submit">Cadastrar</button> <button type="reset">Limpar</button>
+            </form>
+
+        </section>
+    </main>
+    <footer class="flexcontainer" id="rodape">
+        <p>Desenvolvido por Junior | Todos os direitos reservados &copy; 2026</p>
+    </footer>
+</body>
+</html>
