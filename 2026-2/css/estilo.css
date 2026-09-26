@@ -89,6 +89,39 @@ h1{
 section{
     padding: 2% 10%;
 }
+form{
+    width: 70%;
+    margin: 5% auto;
+    text-align: left;
+}
+input, label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 0.7em;
+}
+
+input{
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+button{
+    padding: 10px 20px;
+    background-color:#6f0319;
+    color: #fff;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.required::after{
+    content: " *";
+    color: red;
+}
 
 #rodape{
     justify-content: center;
