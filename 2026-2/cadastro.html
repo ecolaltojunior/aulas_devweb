@@ -12,8 +12,22 @@
 <body>
     <header class="flexcontainer" id="topo">
         <img id="logo" src="imagem/FATEC_ZONA_LESTE.png" alt="logo fatec zona leste">
+        <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
     </header>
     <nav class="flexcontainer">
+        <!--Menu responsivo-->
+        <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+        <input type="checkbox" name="bt_menu" id="bt_menu">
+        <!--Fim Menu responsivo-->
         <ul id="menu">
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
@@ -65,7 +79,7 @@
                     <legend>Login</legend>
                     <label class="required" for="email">E-Mail</label>
                     <input type="email" name="email" id="email" placeholder="nome@site.com.br" required>
-                    <label for="senha">Senha</label>
+                    <label for="senha" class="required">Senha</label>
                     <input type="password" name="senha" id="senha" placeholder="A senha deve conter no mínimo 8 caracteres, uma letra maiúscula, número e caractere especial" required>
                     <label class="required" for="confirma">Confirme a Senha</label>
                     <input type="password" name="confirma" id="confirma" required>
